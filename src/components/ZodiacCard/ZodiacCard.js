@@ -2,11 +2,11 @@ import React from 'react';
 import './ZodiacCard.css';
 
 export default function ZodiacCard({ prop }) {
-  console.log(prop.id, prop.name, prop.dates, prop.symbol);
   return (
     <div className="zodiac-card">
-      <h2>{prop.name}</h2>
+      <h3>{prop.name}</h3>
       <p>{prop.dates}</p>
+      <img src={`./zodiac_images/${prop.name}.png`} />
       <p>{prop.symbol}</p>
     </div>
   );
